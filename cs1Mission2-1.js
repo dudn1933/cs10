@@ -12,4 +12,5 @@ function dec2bin(decimal) {
 
     return answer;
 }
+
 console.log(dec2bin(173));
