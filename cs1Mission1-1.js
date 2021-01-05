@@ -1,4 +1,3 @@
-
 function halfadder(bitA, bitB) {
     let answer = [];
 
