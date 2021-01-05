@@ -13,6 +13,5 @@ function bin2dec(bin) {
 
     return answer;
 }
-
 console.log(bin2dec(num1))
 console.log(bin2dec(num2))
