@@ -1,13 +1,13 @@
 const first = [1, 1, 0, 1, 1, 0, 1, 0];
 const second = [1, 0, 1, 1, 0, 0, 1, 1];
 
-function sum(bitA, bitB) {          
-    if(bitA != bitB) {
+function sum(bitA, bitB) {
+    if (bitA != bitB) {
         return 1;
-    }  else {
+    } else {
         return 0;
     }
- };
+};
 
 function carry(bitA, bitB) {
     return bitA && bitB ? 1 : 0;
@@ -24,10 +24,10 @@ function halfadder(bitA, bitB) {
 
 function fulladder(bitA, bitB, carry) {
     let answer = [];
-    let adder = sum(sum(bitA,bitB),carry);
-    let upper = bitA || bitB && carry ? 1:0;
-    answer.push(upper,adder)
-    return answer;   
+    let adder = sum(sum(bitA, bitB), carry);
+    let upper = bitA || bitB && carry ? 1 : 0;
+    answer.push(upper, adder)
+    return answer;
 }
 
 //------------------------------------- Byte adder
@@ -38,7 +38,9 @@ function byteadder(byteA, byteB) {
     var answer = [];
     let carry = 0;
 
-    for(let value = 0; value < byteA.length; value++) {
+    // 비트가 다를때 
+    
+    for (let value = 0; value < byteA.length; value++) {
         let solution = fulladder(byteA[value], byteB[value], carry);
         console.log(solution)
         carry = solution[0];
@@ -48,7 +50,7 @@ function byteadder(byteA, byteB) {
     return answer;
 }
 
-console.log(byteadder(first,second));
+console.log(byteadder(first, second));
 
 /*
 var byteA = [1, 1, 0, 1, 1, 0, 1, 0];
