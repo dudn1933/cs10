@@ -4,7 +4,7 @@ VMware설치
 ------------------------------------
 <img src="https://i.ibb.co/2dJFPfS/vmware.jpg">
 - VirtualBox로 하다가 프로그램이 동작하지 않아 VMware로 바꿧습니다.
-- 도움을 주신 **Pyro**, **Raccoon** 정말 감사합니다.
+- 도움을 주신 __Pyro__, __Raccoon__ 정말 감사합니다.
 
 ### Ubuntu 설치완료 && 가입완료
 <img src="https://i.ibb.co/Mf8nWpf/6.jpg">
