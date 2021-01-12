@@ -15,10 +15,10 @@ rl
     .on('close', function () {
         const T = Number(input[0]);
         for (let i = 1; i <= T; i++) {
-            
+
             let a = parseInt(input[i][0])
             let b = parseInt(input[i][1])
-            
+
             let result = a;
 
             //핵심 포인트 엄청나게 큰 제곱근을 작게 만들어서 연산속도를 대폭 줄일 수 있다.

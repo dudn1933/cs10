@@ -39,7 +39,7 @@ function byteadder(byteA, byteB) {
     let carry = 0;
 
     // 비트가 다를때 
-    
+
     for (let value = 0; value < byteA.length; value++) {
         let solution = fulladder(byteA[value], byteB[value], carry);
         console.log(solution)

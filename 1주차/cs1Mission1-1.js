@@ -1,9 +1,9 @@
-function sum(bitA, bitB) {          
-   if(bitA != bitB) {
-       return 1;
-   }  else {
-       return 0;
-   }
+function sum(bitA, bitB) {
+    if (bitA != bitB) {
+        return 1;
+    } else {
+        return 0;
+    }
 };
 
 function carry(bitA, bitB) {                    // 0 0 = true   0 1 = false 
@@ -21,10 +21,10 @@ function halfadder(bitA, bitB) {
 
 function fulladder(bitA, bitB, carry) {
     let answer = [];
-    let adder = sum(sum(bitA,bitB),carry);
-    let upper = bitA || bitB && carry ? 1:0;
-    answer.push(upper,adder)
-    return answer;    
+    let adder = sum(sum(bitA, bitB), carry);
+    let upper = bitA || bitB && carry ? 1 : 0;
+    answer.push(upper, adder)
+    return answer;
 }
 
 console.log(halfadder(1, 1));
