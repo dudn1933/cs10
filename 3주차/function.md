@@ -14,15 +14,16 @@
 
 #### example
 
-<code>
+```
 function add(a,b) {
     return a + b;
 }
 console.log(add(10,5));
-</code>
+```
+
 이것은 a와 b의 값이 같을때는 항상 같은 값을 <code>return</cdoe>하기 때문에 순수 함수이다.
 
-<code>
+```
 var c = 10;
 function add2(a,b) {
     return a + b + c;
@@ -31,16 +32,16 @@ console.log(add2(10,5)); 의 결과값으로는 25가 나온다.
 c = 20;
 console.log(add2(10,5)); 의 결과값으로는 35가 나온다.
 이것과 같이 함수의 인자값은 변하지 않았는데 외부에 의해 출력값이 변하게 된것은 순수함수가 아니다.
-</code>
+```
 
 ### 부수효과란?
 
 - 함수내에서 변경된 값에 의해 외부의 값이 변경되는 것.
 
-<code>
+```
 var c = 20;
 function add3(a,b) {
 c = b;
 return a + b;
 }
-</code>
+```
