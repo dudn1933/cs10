@@ -1,21 +1,21 @@
 # 함수형 프로그래밍
 
 ### 순수함수란?
-- <code>pure function</code>(순수함수)는 말그대로 수학적 함수를 말합니다.
-- 들어온 인자가 같으면 항상 같은 값을 <code>return</cdoe>한다.
+- <code>pure function</code> (순수함수)는 말그대로 수학적 함수를 말합니다.
+- 들어온 인자가 같으면 항상 같은 값을 <code>return</cdoe> 한다.
 - 그리고 함수가 받은 인자외에 다른 어떤 외부의 상태에 영향을 끼치지 않는 함수
-- <code>return</cdoe>값 외에는 외부와 소통하는 것이 없는 함수
+- <code>return</cdoe> 값 외에는 외부와 소통하는 것이 없는 함수
 - 순수함수는 조합성을 강조하고 이것은 모듈화 수준을 높이는 것입니다.
 - 순수함수는 오류를 줄이고 안정성을 높이는게 목적이고 모듈화 수준이 높아지면 생산성이 높아집니다.
 
-#### example
+### example
 ```
 function add(a,b) {
     return a + b;
 }
 console.log(add(10,5));
 ```
-이것은 a와 b의 값이 같을때는 항상 같은 값을 <code>return</cdoe>하기 때문에 순수 함수이다.
+이것은 a와 b의 값이 같을때는 항상 같은 값을 <code>return</cdoe> 하기 때문에 순수 함수이다.
 
 ```
 var c = 10;
