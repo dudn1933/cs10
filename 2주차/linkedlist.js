@@ -146,6 +146,7 @@ class LinkedList {
             //초 찾기
             for (let i = 0; i < obj.length; i++) {
                 if (obj[i].RandomString === current.data) {
+                    //전역변수로 설정해준 obj배열에 랜덤id의 값이 들어있음.
                     sec = obj[i].sec;
                 }
             }

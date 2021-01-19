@@ -1,12 +1,14 @@
-//LeetCode 7. Reverse Interger
+//LeetCode 1. Two Sum
 
-var reverse = function (x) {
-
-    const num = parseInt(x.toString().split('').reverse().join(''))
-
-    if (x > Math.pow(2, 31) - 1 || num > Math.pow(2, 31) - 1) {
-        return 0;
-    } else {
-        return x > 0 ? num : -num
-    };
+var twoSum = function (nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] === target) {
+                let arr = [];
+                arr.push(i);
+                arr.push(j);
+                return arr;
+            }
+        }
+    }
 };
