@@ -33,6 +33,39 @@
 
 <br></br>
 
+## Multi Thread
+
+> 프로그램 실행 시 동시에 다수의 처리를 병행하기 위해 여러 개의 처리 단위인 스레드를 생성하여 운영하는 방법
+
+- 동시성(Concurrency) : 멀티 작업을 위해 하나의 코어에서 멀티 스레드가 번갈아 가며 실행하는 성질
+  <br></br>
+
+<img src="https://mblogthumb-phinf.pstatic.net/MjAxNzA4MjZfNjgg/MDAxNTAzNjk5MjEzMDIw.UPvE2MAmWkmNI2z61CUN4kstIGjX7VoKI7Y6eX1noKIg.IoVjyeSp3axFBV53YRnl8CFPxDzbb-ns13loa0SjdQUg.PNG.qbxlvnf11/20170826_070740.png?type=w2">
+<br></br>
+
+- 병렬성(Parallelism) : 멀티 작업을 위해 멀티코어에서 개별 스레드를 동시에 실행하는 성질
+  <br></br>
+
+<img src="https://mblogthumb-phinf.pstatic.net/MjAxNzA4MjZfOTYg/MDAxNTAzNjk5MjEzMzMx.dZs7v2EsZTOhmabhQo3Q_Nshoowi4vs2O7SyGhdfD8cg.vGN4p340i1nH3jYgDZj2AgUFAU8nFN4mBq9PB8nFnaYg.PNG.qbxlvnf11/20170826_071255.png?type=w2">
+<br></br>
+
+#### multi tasking
+
+- 두 가지 이상의 작업을 동시에 처리하는 것. 멀티 스레드 방식을 이용하여 멀티 테스킹 작업이 가능하다.
+  <br></br>
+
+## Thread Scheduling
+
+- 스레드의 개수가 코어의 수 보다 많을 경우, 스레드를 어떤 순서에 의해 동시성으로 실행할 것인가를 정하는 작업이다.
+  스레드 스케줄링에 의해 스레드들은 아주 짧은 시간에 번갈아가면서 그들의 <code>run()</code>메소드를 조금씩 실행한다.
+
+### Scheduling 방식
+
+- 우선순위(Priority) 방식 : 우선순위가 높은 스레드가 실행 상태를 더 많이 가지도록 스케줄링하는 것으로, 스레드 객체에 우선 순위 번호를 부여할 수 있기 때문에 개발자가 코드로 제어할 수 있다.
+  <br></br>
+- 순환 할당(Round-Robin) 방식 : 시간 할당량을 정해서 하나의 스레드를 정해진 시간만큼 실행하고 다시 다른 스레드를 싱행하는 방식으로, 자바 가상 기계에 의해서 정해지기 때문에 코드로 제어할 수 없다.
+  <br></br>
+
 ## 메모리 구조
 
 <br></br>
